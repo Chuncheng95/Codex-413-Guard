@@ -1,7 +1,7 @@
 # Codex session-size discipline
 
 These rules apply when the project uses a third-party or self-hosted model
-gateway and the repository contains the Codex 413 Guard scripts.
+gateway and the repository contains the Codex + DeepSeek API HTTP 413 Recovery scripts.
 
 - At stage boundaries and after screenshot-heavy work, run
   `python3 scripts/session_health.py --list --deep` if the user has authorized
