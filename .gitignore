@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.venv/
+codex-413-backup/
+codex-413-healed/
+*.jsonl
+*.sqlite
+*.sqlite-*
+*.db
+*.log
+.env
+.env.*
+config.toml
+SHA256SUMS.txt
+.DS_Store
