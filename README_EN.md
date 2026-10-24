@@ -1,11 +1,12 @@
-# Codex 413 Guard
+# Codex + DeepSeek API HTTP 413 Recovery
 
 English | [简体中文](README.md)
 
-An experimental warning, handoff, and recovery toolkit for local Codex
-sessions. With some third-party OpenAI-compatible endpoints or self-hosted
-gateways, a long session containing many embedded images can eventually fail
-with `HTTP 413 Payload Too Large`.
+An experimental community toolkit to diagnose, prevent, and recover Codex
+sessions stuck on `HTTP 413 Payload Too Large` when using the **DeepSeek API**,
+MCP images, other OpenAI-compatible endpoints, or self-hosted gateways. A long
+session containing many screenshots or embedded base64 images can eventually
+exceed a gateway's request-body limit.
 
 This project can inspect local rollout size and embedded-image usage, provide a
 pre-failure handoff workflow, and create a smaller copy of a stuck rollout
@@ -35,8 +36,8 @@ limits, or provider outages.
 Python 3.8+ is required. Only the recovery script needs Pillow.
 
 ```bash
-git clone <your-repository-url>
-cd Codex-413-Guard
+git clone https://github.com/Chuncheng95/Codex-DeepSeek-HTTP-413-Recovery.git
+cd Codex-DeepSeek-HTTP-413-Recovery
 python3 -m pip install -r requirements.txt
 ```
 

@@ -32,7 +32,7 @@ Use this immediately before making the repository public.
 
 ## GitHub presentation
 
-- [ ] Repository name: `Codex-413-Guard` (or the owner's chosen variant).
+- [ ] Repository name: `Codex-DeepSeek-HTTP-413-Recovery` (or the owner's chosen variant).
 - [ ] Short description accurately says “experimental” or “community”.
 - [ ] README Chinese/English links work.
 - [ ] License choice is acceptable to the repository owner.
@@ -41,5 +41,6 @@ Use this immediately before making the repository public.
 
 Suggested GitHub description:
 
-> Experimental warning, handoff, and recovery tools for image-heavy Codex
-> sessions that hit HTTP 413 on third-party gateways.
+> Diagnose, prevent, and recover Codex sessions stuck on “HTTP 413 Payload Too
+> Large” when using the DeepSeek API, MCP images, or other OpenAI-compatible
+> gateways.

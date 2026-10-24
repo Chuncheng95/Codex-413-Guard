@@ -1,10 +1,11 @@
-# Codex 413 Guard
+# Codex + DeepSeek API HTTP 413：会话卡死修复、预警与恢复
 
 [English](README_EN.md) | 简体中文
 
-一个面向 Codex 本地会话的实验性预警、交接与恢复工具包。当使用第三方
-OpenAI 兼容接口或自建网关时，包含大量内嵌图片的长会话可能因请求体过大而返回
-`HTTP 413 Payload Too Large`。本项目帮助你：
+一个用于诊断、预防和恢复 **Codex + DeepSeek API** 会话
+`HTTP 413 Payload Too Large`（请求体过大）问题的实验性社区工具包。当 Codex
+通过 DeepSeek API、其他 OpenAI 兼容接口或自建网关处理大量 MCP 图片、截图或
+内嵌 base64 图片时，长会话可能因为请求体过大而持续返回 HTTP 413。本项目帮助你：
 
 - 查看本地 rollout 文件大小和内嵌图片占用；
 - 在风险升高时先写 `HANDOFF.md`，换会话继续；
@@ -32,8 +33,8 @@ OpenAI 兼容接口或自建网关时，包含大量内嵌图片的长会话可�
 需要 Python 3.8+。只有恢复脚本需要 Pillow。
 
 ```bash
-git clone <你的仓库地址>
-cd Codex-413-Guard
+git clone https://github.com/Chuncheng95/Codex-DeepSeek-HTTP-413-Recovery.git
+cd Codex-DeepSeek-HTTP-413-Recovery
 python3 -m pip install -r requirements.txt
 ```
 
