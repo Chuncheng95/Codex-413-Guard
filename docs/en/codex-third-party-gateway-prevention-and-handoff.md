@@ -1,4 +1,4 @@
-# Prevention and res-failure handoff for third-party Codex gateways
+# Prevention and pre-failure handoff for third-party Codex gateways
 
 > The original case used a DeepSeek-compatible route, but this workflow is
 > about Codex behind any third-party or self-hosted gateway. Real limits differ
@@ -136,4 +136,13 @@ fails, or user action is required; stay quiet while state is unchanged.
 4. Update the handoff at every stage boundary, not only after a warning.
 5. Do not repeatedly inline old screenshots in new messages.
 6. Once warning is reached, a new session is usually safer than gambling on
-   another image-heavy?
+   another image-heavy turn.
+
+## If 413 has already started
+
+Do not ask the affected session to “summarize one more time.” Read the
+[full recovery article](codex-413-session-recovery-guide.md), confirm the error
+with read-only checks, then create a backed-up new-ID copy and perform layered
+validation.
+
+For the compact handoff procedure, see [Warning and handoff](HANDOFF.md).
